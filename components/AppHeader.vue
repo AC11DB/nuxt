@@ -1,13 +1,14 @@
 <template>
   <header>
-    <div> 
-      <NuxtLink to="/">Logo: User name</NuxtLink>
-      </div>
+    <div>
+      <NuxtLink to="/">Logo: User Name</NuxtLink>
+    </div>
     <nav>
-      <Nuxt Link to="signup">Sign Up Page</NuxtLink
+      <NuxtLink to="signup">Sign Up Page</NuxtLink>
     </nav>
   </header>
 </template>
+
 <style scoped>
 header {
   display: flex;
@@ -17,7 +18,10 @@ header {
   color: white;
   background-color: black;
 }
-a{
-  color
+a {
+  color: white;
+}
+a:hover {
+  color: blue;
 }
 </style>
