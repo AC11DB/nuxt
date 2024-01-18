@@ -4,6 +4,8 @@
       <NuxtLink to="/">Logo: User Name</NuxtLink>
     </div>
     <nav>
+      <NuxtLink to="employees">Employees</NuxtLink>
+      <NuxtLink to="dogs">Dogs</NuxtLink>
       <NuxtLink to="signup">Sign Up Page</NuxtLink>
     </nav>
   </header>
@@ -20,8 +22,14 @@ header {
 }
 a {
   color: white;
+  text-decoration: none;
 }
 a:hover {
   color: blue;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
 }
 </style>
