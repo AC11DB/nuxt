@@ -13,9 +13,10 @@ const clientSideExample = "Updated Blah";
 
     <section>
       <h2>Hello Data Endpoint Example</h2>
-      <p>{{ hello }}</p>
+      <p>{{ hello.hello }}</p>
       {{ clientSideExample }}
     </section>
+    <pre>{{ characters }}</pre>
     <section>
       <h2>Disney Character Fetch</h2>
       <ul>

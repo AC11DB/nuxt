@@ -1,16 +1,18 @@
 <script setup>
-//fetch the data from a server rout
-const fetchEmployees = async () => {
-  const (employees) = await sfetch("/api/employees");
-};
-const employees = fetchEmployees();
-console.log(employees);
+// Fetch the data from a server route
+
+const { data: employees } = await useFetch("/api/employees", {
+  headers: useRequestHeaders(["cookie"]),
+});
+const newEmployees = employees[0];
 </script>
 
 <template>
   <main>
     <h1>Employees</h1>
-    <!-- render the fethced data-->>
-    <pre>{{ employees }}</pre>
+    <!-- render the fetched data -->
+    <ul>
+      <li v-for="employee in employees">{{ employee }}</li>
+    </ul>
   </main>
 </template>
